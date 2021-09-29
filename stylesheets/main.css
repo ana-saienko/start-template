@@ -154,6 +154,11 @@ body._lock {
   width: 1px;
 }
 
+header h1 {
+  font-size: 19px;
+  color: red;
+}
+
 @media (min-width: 767.98px) {
   .menu__list {
     display: -webkit-box;
