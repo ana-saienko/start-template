@@ -1,0 +1,49 @@
+@mixin img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ibg {
+  position: relative;
+  img {
+    @include img;
+  }
+}
+
+// .img-wrap {
+// @include width-height();
+// @include flex-basis();
+// @include padding-bottom();
+// }
+
+// -----------------------------------------------------------------------------
+// обычной картинке в диве задавать @include width-height(); (высоту и ширину)
+// если картинка - флекс элемент, то тогда flex-basis: 50%;
+// -----------------------------------------------------------------------------
+
+@mixin width-height($width, $height) {
+  max-width: $width;
+  height: $height;
+}
+
+// @include width-height();
+
+@mixin flex-basis($flex-basis) {
+  flex-basis: $flex-basis;
+}
+
+// @include flex-basis();
+
+// -----------------------------------------------------------------------------
+// чтобы указать высоту картинки указываем паддинг
+// -----------------------------------------------------------------------------
+
+@mixin padding-bottom($percent) {
+  padding-bottom: $percent;
+}
+
+// @include padding-bottom();

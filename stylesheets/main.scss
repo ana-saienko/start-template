@@ -20,9 +20,15 @@
 @import
   'layout/header',
   'layout/hero',
-  'layout/footer';
+  'layout/footer',
+  'layout/sec1',
+  'layout/sec2',
+  'layout/sec3',
+  'layout/sec4',
+  'layout/sec5';
 
 // 5. Components
 @import
   'components/button',
-  'components/header-burger';
+  'components/header-burger',
+  'components/adaptable-image';

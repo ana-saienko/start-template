@@ -2,4 +2,31 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@mixin animate {
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+ }
 
+ // @include animate;
+
+ @mixin inline-flex {
+	display: inline-flex;
+ }
+
+  // @include inline-flex;
+
+  @mixin inline-flex-center {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+ }
+
+  // @include inline-flex-center;
+
+  @mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+
+  // @include flex-center;
